@@ -27,6 +27,7 @@ int main() {
 //   ast_print(&root);
 
   ast_destroy(&root);
+  destroyVariableProcedure(&ctx);
 
   return ret;
 }
