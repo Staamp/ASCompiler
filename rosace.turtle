@@ -1,0 +1,69 @@
+
+proc CIRCLE {
+  repeat 360 {
+    up
+    fw 70
+    down
+    fw 7
+    up
+    bw 77
+    left 1
+  }
+}
+
+
+
+proc CARRE {
+	repeat 4 {
+		fw 100
+		right 90
+	}
+	heading random(0, 90)
+	up
+	position random(-WIDTH, WIDTH), random(-WIDTH, WIDTH)
+	down
+	color random(0, 1), random(0, 1), random(0, 1)
+}
+
+set WIDTH 500
+
+repeat 15 {
+	down
+	call CARRE
+	call CIRCLE
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
